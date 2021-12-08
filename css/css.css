@@ -1,0 +1,71 @@
+
+html,
+body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  padding: 0;
+  margin: 0; }
+
+div {
+  box-sizing: border-box; }
+
+/*容器框的大小有线*/
+.template-wrap {
+  width: 1000px;
+  height: 300px;
+  /* border: 1px solid #767676; */
+  margin: 0 auto;
+  padding: .5em; }
+
+.ep-flowchart {
+  width: 1000px;
+  position: absolute; }
+
+
+.ep-svg-block {
+  cursor: pointer; }  /*鼠标样式*/
+
+rect, text {
+  transition: all .3s ease; }
+  rect:hover rect, rect:hover text, text:hover rect, text:hover text {
+    transform: translateY(-5px);
+    text-shadow: 0 1px 0 #fff, 0 -1px 0 #000; }
+
+/*表格美化*/
+table {
+position: absolute;
+width: 90%;
+background: #ccc;
+margin: 10px auto;
+border-collapse: collapse;
+}
+
+th,td {
+height: 25px;
+line-height: 25px;
+text-align: center;
+border: 1px solid #ccc;
+}
+
+th {
+background: #e8e9f3;
+font-weight: bold;
+}
+
+tr {
+background: #fff;
+}
+
+tr:hover {
+background: rgb(240, 239, 239);
+}
+
+td a {
+color: #06f;
+text-decoration: none;
+}
+
+td a:hover {
+color: #06f;
+text-decoration: underline;
+cursor: pointer; 
+}
